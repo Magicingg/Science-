@@ -3,7 +3,10 @@ body{
     margin: 0;
     color: #eee;
     font-family: Poppins;
-    font-size: 12px;
+    overflow-x: hidden;
+}
+html, body {
+    height: 100vh;
 }
 a{
     text-decoration: none;
@@ -14,6 +17,7 @@ header{
     margin: auto;
     height: 50px;
     display: flex;
+    font-size: 12px;
     align-items: center;
     position: relative;
     z-index: 100;
@@ -54,6 +58,10 @@ header a:hover {
     width: 100vw;
     overflow: hidden;
     position: relative;
+    font-size: 12px;
+}
+.des{
+    font-size: 13px;
 }
 .carousel .list .item{
     width: 100%;
@@ -416,4 +424,107 @@ header a:hover {
 
 .dropdown2:hover .dropdown-content2 {
     display: block;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #f1683a;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+
+/*scroll*/
+    background: #f1683a; }
+    @keyframes appear{
+        from {
+            opacity: 0;
+            scale:0.5;
+        }
+        to{ 
+            opacity: 1;
+            scale: 1;
+        }
+            }
+
+    .course-col, 
+    .headd{ 
+        animation:appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        }
+    .footercontainer{ 
+        animation:appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+        }
+.footer{ 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color:rgb(0, 0, 0);
+    
+}
+.footerContainer{
+    width: 100%;
+    padding:70px 30px 20px;
+}
+.socialicons{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.socialicons a{
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin:10px;
+    border-radius:50%;
+}
+
+.socialicons a i{
+    font-size: 2em;
+    color:black;
+    opacity:0.9;
+}
+
+.socialicons a:hover{
+    background-color: goldenrod;
+    transition:0.5s
+}
+
+.footerBottom{
+    margin-top: -20px;
+    padding:5px;
+    text-align: center;
+}
+.footerBottom p{
+    color:white;
+}
+.Designer{
+    opacity:1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin: 0px 5px;
+    color:#f1683a;
+}
+.footertop{
+    padding:20px;
+    text-align: center;
+    margin-bottom:-30px
+}
+.footertop p{
+    color:white;
 }
