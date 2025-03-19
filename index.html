@@ -7,31 +7,39 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="logo.enc" type="image_png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="ecosystem.html">Ecosystems</a>
-            <a href="data.html">Data</a>
-            <div class="dropdown">
-                <a href="#">Info ▾</a>
-                <div class="dropdown-content">
-                    <a href="infoforest.html">Forest</a>
-                    <a href="infosea.html">Ocean</a>
-                    <a href="infotundra.html">Tundra</a>
+    <div class="header-wrapper">
+        <div class="logo-container">
+            <img class="logo" src="logo.enc" alt="Logo">
+            <span class="tooltip">Save our ecosystem! 😭</span>
+        </div>
+        <header>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="ecosystem.html">Ecosystems</a>
+                <a href="data.html">Data</a>
+                <div class="dropdown">
+                    <a href="#">Info ▾</a>
+                    <div class="dropdown-content">
+                        <a href="infoforest.html">Forest</a>
+                        <a href="infosea.html">Marine</a>
+                        <a href="infotundra.html">Tundra</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown2">
-                <a href="#">Challenges ▾</a>
-                <div class="dropdown-content2">
-                    <a href="challengesforest.html">Forest</a>
-                    <a href="challengessea.html">Ocean</a>
-                    <a href="challengestundra.html">Tundra</a>
+                <div class="dropdown2">
+                    <a >Challenges ▾</a>
+                    <div class="dropdown-content2">
+                        <a href="challengesforest.html">Forest</a>
+                        <a href="challengessea.html">Marine</a>
+                        <a href="challengestundra.html">Tundra</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+        </div>
     <section class="home">
         <div class="home-content">
             <h3 id="title" class="fade-in">SAVING OUR </h3>
@@ -50,7 +58,8 @@
     </section>
 
 
-    <section class="course">
+<section class="course">
+    
     <div class="headd">
         <h1 id="titlec">Why save our ECOSYSTEM?</h1>
         <p id="description">Our ecosystem keeps us alive by providing clean air, fresh water, food, and a stable climate. When we harm nature, we risk our health, resources, and future. <b>Protecting ecosystems means protecting ourselves. Everyone needs nature.</b></p>
@@ -70,8 +79,98 @@
             <p id="description">Forests and oceans absorb carbon dioxide, helping regulate the climate. Without them, extreme weather and global warming worsen.</p>
         </div>
     </div>
-    </section>
+    
+    
+</section>
+<section class="blog">
+    <div class="page-wrapper">
+        <div class="post-slider">
+            <h1 class="slider-title">Trending Posts</h1>
 
+            <div class="post-wrapper">
+                <div class="post">
+                    <img src="forestfires.jpg" class="slider-image">
+                    <div class="post-info">
+                        <h4 class="post-description"><a href="challengesforest.html"> Our Forests are in Danger!</a></h4>
+                        <i>Human activities are threatening our forests: see the key challenges they face.
+                        </i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="Pollutionbanner.jpg" class="slider-image">
+                    <div class="post-info">
+                        <h4 class="post-description"><a href="data.html">Pollution by the Numbers</a></h4>
+                        <i>Shocking global pollution statistics and what you can do to help.</i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="ecosystemsblgo.jpg" class="slider-image">
+                    <div class="post-info">
+                        <h4 class="post-description"><a href="#">Exploring Earth’s Ecosystems</a></h4>
+                        <i>From rainforests to tundras, explore the diverse ecosystems that sustain life.</i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="overfishing.jpg" class="slider-image">
+                    <div class="post-info">
+                        <h4 class="post-description"><a href="#">Marine Life Under Threat!</a></h4>
+                        <i>Human activities are pushing ocean species toward extinction.</i>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="mining.jpg" class="slider-image">
+                    <div class="post-info">
+                        <h4 class="post-description"><a href="#">The Tundra vs. Humans</a></h4>
+                        <i> Melting ice and habitat loss threaten the tundra's survival.</i>
+                    </div>
+                </div>
+            </div>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+
+        </div>
+
+    </div>
+    <div class="wavesbg">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(200,200,200,0.7)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(200,200,200,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(200,200,200,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="black" height:1vh/>
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+</section>
 <section class="footer">
     <div class="footercontainer">
         <div class="footertop">
@@ -86,10 +185,18 @@
             <a href="https://github.com/Magicingg"><i class="fa-brands fa-github"></i></a>
         </div>
         <div class="footerBottom">
-            <p>Copyright &copy;2025; Designed by <span class="Designer">Group 3, 10A</span> </p>
+            <p>
+                <img src="logo.enc" alt="Logo" width="30" height="30" style="vertical-align: middle; margin-right: 5px; border-radius: 40px;">
+                Copyright &copy;2025; Designed by <span class="Designer">Group 3, 10A</span>
+            </p>
         </div>
     </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -23,9 +23,17 @@ header{
     z-index: 100;
     background:transparent;
 }
+.logo{
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 7.5px;
+    left: -81.5px; 
+}
 header a {
     font-weight: 400;
-    color: #eee;
+    color: #ffffff;
     margin-right: 40px;
     transition: all 0.3s ease-in-out;
     padding: 10px 15px;
@@ -527,4 +535,81 @@ header a:hover {
 }
 .footertop p{
     color:white;
+}
+
+
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: -700px;
+    z-index:100
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+
+.wavestop {
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    margin-bottom: -10px;
+    transform: scaleY(-1);
+  }
+
+  ::selection {
+    background-color: rgb(255, 255, 179); 
+    color: black;
+  }
+
+  .logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(251, 255, 0, 0.9); 
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

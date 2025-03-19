@@ -9,29 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="ecosystem.html" class="active">Ecosystems</a>
-            <a href="data.html">Data</a>
-            <div class="dropdown">
-                <a href="#">Info ▾</a>
-                <div class="dropdown-content">
-                    <a href="infoforest.html">Forest</a>
-                    <a href="infosea.html">Ocean</a>
-                    <a href="infotundra.html">Tundra</a>
+        <header>
+                <div class="logo-container">
+                    <img class="logo" src="logo.enc" alt="Logo">
                 </div>
-            </div>
-            <div class="dropdown2">
-                <a href="#">Challenges ▾</a>
-                <div class="dropdown-content2">
-                    <a href="challengesforest.html">Forest</a>
-                    <a href="challengessea.html">Ocean</a>
-                    <a href="challengestundra.html">Tundra</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#" class="active">Ecosystems</a>
+                <a href="data.html">Data</a>
+                <div class="dropdown">
+                    <a href="#">Info ▾</a>
+                    <div class="dropdown-content">
+                        <a href="infoforest.html">Forest</a>
+                        <a href="infosea.html">Marine</a>
+                        <a href="infotundra.html">Tundra</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+                <div class="dropdown2">
+                    <a href="#">Challenges ▾</a>
+                    <div class="dropdown-content2">
+                        <a href="challengesforest.html">Forest</a>
+                        <a href="challengessea.html">Marine</a>
+                        <a href="challengestundra.html">Tundra</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+</div>
 
     <div class="carousel">
         <div class="list">
@@ -77,7 +81,7 @@
                     <div class="author">WORLD</div>
                     <div class="title">ECOSYSTEM:</div>
                     <div class="topic">
-                        <div class="ocean">OCEAN</div>
+                        <div class="ocean">MARINE</div>
                     </div>
                     <div class="des">
                         The ocean ecosystem, covering over 70% of Earth, supports diverse marine life and regulates climate, produces oxygen, and provides food and livelihoods. Key habitats include open oceans, coral reefs, deep-sea trenches, coastal waters, and polar seas. Threats like pollution, overfishing, and climate change endanger ocean health. Conservation efforts, including marine reserves, sustainable fishing, and pollution reduction, are vital for preserving biodiversity and resources.
@@ -121,7 +125,7 @@
                         ECOSYSTEM:  
                     </div>
                     <div class="description">
-                        Ocean
+                        Marine
                     </div>
                 </div>
             </div>
@@ -130,8 +134,45 @@
             <button id="prev"><</button>
             <button id="next">></button>
         </div>
-
         <div class="time"></div>
+        <div class="wavesbg">
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(200,200,200,0.7)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(200,200,200,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(200,200,200,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="black" height:1vh/>
+              </g>
+            </svg>
+          </div>
     </div>
     <section class="footer">
         <div class="footercontainer">
@@ -147,7 +188,10 @@
                 <a href="https://github.com/Magicingg"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="footerBottom">
-                <p>Copyright &copy;2025; Designed by <span class="Designer">Group 3, 10A</span> </p>
+                <p>
+                    <img src="logo.enc" alt="Logo" width="30" height="30" style="vertical-align: middle; margin-right: 5px; border-radius: 40px;">
+                    Copyright &copy;2025; Designed by <span class="Designer">Group 3, 10A</span>
+                </p>
             </div>
         </div>
     </section>
